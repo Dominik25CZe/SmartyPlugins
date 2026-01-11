@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  padding: 40px;
+}
+
+.card {
+  background: #020617;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.price {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.buy {
+  display: inline-block;
+  background: #22c55e;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.buy:hover {
+  background: #16a34a;
+}
+
+.note {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 15px;
+}
+
+footer {
+  margin: 30px;
+}
