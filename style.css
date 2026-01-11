@@ -17,12 +17,25 @@ body{
   min-height:100vh;
 }
 
-header{padding:60px 20px 20px}
-header h1{margin:0;font-size:42px}
-header p{color:var(--muted)}
+header{
+  padding:60px 20px 20px;
+}
 
-.card-3d{perspective:1200px}
+header h1{
+  margin:0;
+  font-size:42px;
+}
 
+header p{
+  color:var(--muted);
+}
+
+/* 3D WRAPPER */
+.card-3d{
+  perspective:1200px;
+}
+
+/* CARD */
 .card{
   background:linear-gradient(180deg,#0b1226,#020617);
   max-width:420px;
@@ -31,21 +44,33 @@ header p{color:var(--muted)}
   border-radius:18px;
   border:1px solid #1f2937;
   transform-style:preserve-3d;
-  transition:.25s;
+  transition:transform .1s ease;
   box-shadow:0 30px 60px rgba(0,0,0,.6);
 }
 
-.card-3d:hover .card{
-  transform:rotateX(8deg) rotateY(-8deg) translateY(-6px);
-  box-shadow:0 40px 80px rgba(0,0,0,.8);
+/* DEPTH */
+.card h2{
+  transform:translateZ(45px);
 }
 
-.card h2{transform:translateZ(40px)}
-.card ul{list-style:none;padding:0;transform:translateZ(30px)}
-.card ul li{color:var(--muted)}
+.card ul{
+  list-style:none;
+  padding:0;
+  transform:translateZ(30px);
+}
 
-.price{font-size:22px;transform:translateZ(35px)}
-.price b{color:var(--primary)}
+.card ul li{
+  color:var(--muted);
+}
+
+.price{
+  font-size:22px;
+  transform:translateZ(35px);
+}
+
+.price b{
+  color:var(--primary);
+}
 
 .buy{
   display:block;
@@ -56,10 +81,15 @@ header p{color:var(--muted)}
   border-radius:12px;
   text-decoration:none;
   font-weight:800;
-  transform:translateZ(50px);
+  transform:translateZ(55px);
+  box-shadow:0 10px 25px rgba(34,197,94,.4);
 }
 
-.note{font-size:12px;color:var(--muted);margin-top:15px}
+footer{
+  margin:40px;
+}
 
-footer{margin:40px}
-footer a{color:var(--muted);text-decoration:none}
+footer a{
+  color:var(--muted);
+  text-decoration:none;
+}
